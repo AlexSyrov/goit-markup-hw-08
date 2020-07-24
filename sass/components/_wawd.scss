@@ -46,3 +46,8 @@
   text-align: center;
   text-transform: uppercase;
 }
+.wawd {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}

@@ -7,7 +7,7 @@
   text-align: center;
   background-color: rgba(0, 0, 0, 80%);
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.8),
@@ -22,11 +22,11 @@
 .hero-title {
   color: $white-color;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  max-width: 696px;
+  max-width: 360px;
   margin: 0;
   margin-left: auto;
   margin-right: auto;

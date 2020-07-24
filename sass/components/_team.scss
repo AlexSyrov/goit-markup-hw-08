@@ -1,5 +1,4 @@
 .team-flex {
-  display: flex;
 }
 
 .sl-flex {
@@ -14,20 +13,20 @@
 }
 .workers-photo {
   display: block;
-  max-width: 100%;
+  width: 450px;
   height: auto;
 
   border-radius: 0px 0px 4px 4px;
 }
 
 .photo-workers {
-  margin-right: 30px;
-  width: calc((100% - 30px * 3) / 4);
+  margin-bottom: 30px;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
 }
+
 .photo-workers:last-child {
-  margin-right: 0;
+  margin-bottom: 0;
 }
 
 .team-list {
@@ -52,7 +51,7 @@
   text-align: center;
   padding-top: 30px;
   padding-bottom: 24px;
-  width: 270px;
+
   border-radius: 0px 0px 4px 4px;
 }
 

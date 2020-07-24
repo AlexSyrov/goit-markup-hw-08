@@ -1,7 +1,9 @@
 /* logo */
 .nav-flex {
-  display: flex;
-  align-items: center;
+}
+
+.logo {
+  margin-top: 16px;
 }
 
 .logo-primary {
@@ -29,8 +31,6 @@
   padding-left: 0px;
   margin-top: 0;
   margin-bottom: 0;
-  display: flex;
-  margin-left: 85px;
 
   & .link:hover,
   & .link:focus {
@@ -42,9 +42,8 @@
   padding-left: 0px;
   margin-top: 0;
   margin-bottom: 0;
-  display: flex;
+
   margin-left: auto;
-  align-items: center;
 
   & .link:hover,
   & .link:focus {
@@ -53,9 +52,6 @@
 }
 
 .site-nav > .item > .link {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  display: block;
 }
 
 .site-nav .link {
@@ -68,7 +64,6 @@
   transition: color 250ms $cubic;
 }
 .site-nav-ad .link {
-  display: flex;
   align-items: center;
   color: $main-text-color;
   font-style: normal;
@@ -123,9 +118,7 @@
 }
 
 .site-nav .item + .item {
-  margin-left: 50px;
 }
 
 .site-nav-ad > .link + .link {
-  margin-left: 30px;
 }

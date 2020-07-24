@@ -1,0 +1,100 @@
+.team-flex {
+  display: flex;
+}
+
+.sl-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.team-box {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: $team-background-color;
+}
+.workers-photo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+
+  border-radius: 0px 0px 4px 4px;
+}
+
+.photo-workers {
+  margin-right: 30px;
+  width: calc((100% - 30px * 3) / 4);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+.photo-workers:last-child {
+  margin-right: 0;
+}
+
+.team-list {
+  margin-top: 0;
+  margin-bottom: 0px;
+  padding-left: 0;
+}
+
+.member-box {
+  background-color: $white-color;
+}
+.member-title {
+  color: $title-text-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.info-container {
+  background-color: $white-color;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 24px;
+  width: 270px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.postposition {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  margin-top: 0px;
+  margin-bottom: 28px;
+}
+
+.socialnets {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: $white-color;
+  fill: $icon-color;
+  transition: background-color 250ms $cubic;
+}
+
+.socialnets:hover,
+.socialnets:focus {
+  background-color: $accent-color;
+}
+.socialnets:hover .socialnets-icons,
+.socialnets:focus .socialnets-icons {
+  fill: $white-color;
+}
+
+.f-heading {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0px;
+  padding: 0px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

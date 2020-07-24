@@ -1,0 +1,48 @@
+.wawd-flex {
+  display: flex;
+  padding-bottom: 94px;
+}
+
+.wawd {
+  padding-top: 94px;
+}
+
+.wawd-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-wawd {
+  margin-left: 30px;
+  width: calc((100% - 30px * 2) / 3);
+  display: block;
+  position: relative;
+  margin-bottom: 0;
+}
+.wawd-position-img {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+}
+.wawd-position {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+}
+
+.wawd-item {
+  color: $white-color;
+  background-color: rgba(47, 48, 58, 0.8);
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+}

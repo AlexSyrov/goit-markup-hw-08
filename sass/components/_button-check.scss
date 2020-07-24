@@ -1,0 +1,10 @@
+.button-check {
+  display: flex;
+  justify-content: center;
+}
+.button-check .b-item {
+  margin-right: 8px;
+}
+.button-check .b-item:last-child {
+  margin-right: 0;
+}

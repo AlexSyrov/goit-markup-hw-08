@@ -18,6 +18,7 @@ a {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  position: relative;
 }
 
 @media screen and (min-width: 480px) {
@@ -192,8 +193,56 @@ a {
 }
 
 /* logo */
-.logo {
-  margin-top: 16px;
+.nav-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 60px;
+}
+
+.mob-but-menu {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.mob-but-menu .icon-cross {
+  display: none;
+}
+
+.mob-but-menu.is-open .icon-cross {
+  display: block;
+}
+
+.mob-but-menu.is-open .icon-menu {
+  display: none;
+}
+
+.mob-but-menu:hover, .mob-but-menu:focus {
+  fill: #2196f3;
+}
+
+.menu-container {
+  display: none;
+  background-color: #ffffff;
+  text-align: center;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.menu-container.is-open {
+  display: block;
 }
 
 .logo-primary {

@@ -1,9 +1,9 @@
-/* logo */
 .nav-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: 60px;
+  position: relative;
 }
 
 .mob-but-menu {
@@ -117,8 +117,8 @@
   color: $title-text-color;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.43;
+  font-size: 18px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   transition: color 250ms $cubic;
 }
@@ -127,8 +127,8 @@
   color: $main-text-color;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.43;
+  font-size: 18px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   transition: color 250ms $cubic;
 }

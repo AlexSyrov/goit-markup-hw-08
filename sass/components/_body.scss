@@ -46,7 +46,7 @@ a {
     width: 768px;
   }
   @media screen and (min-width: 1170px) {
-    width: 1170px;
+    width: 1200px;
   }
 }
 .f-head-container {
@@ -82,10 +82,10 @@ a {
 .title {
   color: $title-text-color;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.18;
 
   text-align: center;

@@ -851,16 +851,6 @@ pre {
   margin-left: 10px;
 }
 
-.developed {
-  color: rgba(255, 255, 255, 40%);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 2;
-  margin-bottom: 0;
-
-  text-align: center;
-}
 /* portfolio page */
 
 .portfolio {

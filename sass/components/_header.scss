@@ -212,12 +212,8 @@
   border-radius: 2px;
 }
 
-@media screen and (min-width: 768px) {
-  .site-nav .item + .item {
-    margin-left: 50px;
-  }
+.site-nav .item + .item {
+}
 
-  .site-nav-ad > .ad-link + .ad-link {
-    margin-left: 30px;
-  }
+.site-nav-ad > .link + .link {
 }

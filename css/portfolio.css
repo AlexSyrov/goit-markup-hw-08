@@ -439,15 +439,6 @@ a {
   border-radius: 2px;
 }
 
-@media screen and (min-width: 768px) {
-  .site-nav .item + .item {
-    margin-left: 50px;
-  }
-  .site-nav-ad > .ad-link + .ad-link {
-    margin-left: 30px;
-  }
-}
-
 .project-flex {
   display: -webkit-box;
   display: -ms-flexbox;

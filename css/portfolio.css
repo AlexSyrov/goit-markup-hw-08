@@ -88,6 +88,11 @@ a {
 @media screen and (min-width: 768px) {
   .f-head-container {
     width: 768px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -277,7 +282,7 @@ a {
   display: flex;
   background-color: #ffffff;
   text-align: center;
-  z-index: 999;
+  z-index: 800;
 }
 
 .menu-container.is-open {
@@ -499,14 +504,20 @@ a {
 }
 
 .project-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .project-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .portfolio {
@@ -550,6 +561,23 @@ a {
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
   z-index: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .project {
+    width: 47%;
+  }
+  .project:nth-child(1), .project:nth-child(3), .project:nth-child(5), .project:nth-child(7) {
+    margin-right: 30px;
+  }
+  .project:nth-child(9) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 
 .project:hover, .project:focus {
@@ -671,6 +699,12 @@ a {
   line-height: 1.19px;
 }
 
+@media screen and (min-width: 768px) {
+  .logo-address {
+    margin-left: 76px;
+  }
+}
+
 .address-city {
   color: #ffffff;
   font-style: normal;
@@ -713,6 +747,18 @@ a {
   color: #2196f3;
 }
 
+@media screen and (min-width: 768px) {
+  .conecting {
+    margin-left: 165px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .send-email {
+    margin-left: 144px;
+  }
+}
+
 .conecting-title {
   color: #ffffff;
   font-style: normal;
@@ -751,6 +797,12 @@ a {
   display: block;
   width: 100%;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .f-form-field {
+    width: 450px;
+  }
 }
 
 .f-form-field input {

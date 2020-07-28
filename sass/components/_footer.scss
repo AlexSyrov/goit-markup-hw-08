@@ -15,6 +15,9 @@
   line-height: 1.19px;
 }
 .logo-address {
+  @media screen and(min-width: 768px) {
+    margin-left: 76px;
+  }
   // width: calc((100% - 60px) / 4);
 }
 .address-city {
@@ -54,7 +57,16 @@
 }
 
 .conecting {
+  @media screen and (min-width: 768px) {
+    margin-left: 165px;
+  }
   // width: calc((100% - 60px) / 4);
+}
+
+.send-email {
+  @media screen and (min-width: 768px) {
+    margin-left: 144px;
+  }
 }
 
 .conecting-title {
@@ -88,6 +100,10 @@
   display: block;
   width: 100%;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
 }
 
 .f-form-field input {

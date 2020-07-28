@@ -191,12 +191,31 @@ a {
           justify-content: center;
 }
 
+@media screen and (max-width: 767px) {
+  .button-check {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
 .button-check .b-item {
+  margin-bottom: 15px;
   margin-right: 8px;
 }
 
 .button-check .b-item:last-child {
   margin-right: 0;
+  margin-bottom: 0;
+}
+
+.button-check .b-item:nth-child(4) {
+  margin-bottom: 0;
 }
 
 .nav-flex {
@@ -248,21 +267,28 @@ a {
   }
 }
 
+.menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ffffff;
+  text-align: center;
+  z-index: 999;
+}
+
+.menu-container.is-open {
+  display: block;
+}
+
 @media screen and (max-width: 767px) {
   .menu-container {
-    background-color: #ffffff;
-    text-align: center;
-    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
-            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
     display: none;
     position: absolute;
-    top: 100%;
     left: 0;
     width: 100%;
     height: auto;
-  }
-  .menu-container.is-open {
-    display: block;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
   }
 }
 
@@ -286,9 +312,11 @@ a {
 
 /* site nav */
 .site-nav {
-  padding-left: 0;
+  margin-left: 81px;
+  margin-right: 84px;
   margin-top: 0;
   margin-bottom: 0;
+  padding-left: 0;
 }
 
 .site-nav .link:hover,
@@ -297,6 +325,9 @@ a {
 }
 
 @media screen and (max-width: 767px) {
+  .site-nav {
+    font-size: 18px;
+  }
   .site-nav .item {
     margin-top: 60px;
     margin-bottom: 40px;
@@ -311,7 +342,6 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 85px;
   }
 }
 
@@ -320,6 +350,12 @@ a {
     padding-top: 32px;
     padding-bottom: 32px;
     display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav .item + .item {
+    margin-left: 50px;
   }
 }
 
@@ -335,12 +371,24 @@ a {
   color: #2196f3;
 }
 
+.site-nav-ad .ad-link:last-child {
+  margin-top: 10px;
+}
+
 @media screen and (max-width: 767px) {
   .site-nav-ad .ad-link {
     margin-bottom: 16px;
   }
   .site-nav-ad .ad-link + .ad-link {
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav-ad {
+    display: inline;
+    padding-bottom: 21px;
+    padding-top: 21px;
   }
 }
 
@@ -372,6 +420,12 @@ a {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 768px) {
+  .site-nav .link {
+    font-size: 14px;
+  }
+}
+
 .site-nav-ad .link {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -388,6 +442,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .site-nav-ad .link {
+    font-size: 12px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -445,10 +500,19 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .portfolio {
   padding-top: 94px;
+}
+
+@media screen and (max-width: 1199px) {
+  .portfolio {
+    padding-top: 60px;
+  }
 }
 
 .title-project {
@@ -468,14 +532,20 @@ a {
 
 .project {
   width: 370px;
-  margin-right: 30px;
-  margin-bottom: 30px;
   border: 1px solid #eeeeee;
+  z-index: 1;
 }
 
 .project:hover, .project:focus {
   -webkit-box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
           box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+@media screen and (min-width: 1200px) {
+  .project {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .project:nth-child(3n) {
@@ -550,7 +620,19 @@ a {
 }
 
 .portfolio-filters {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-filters {
+    margin-bottom: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-filters {
+    margin-bottom: 50px;
+  }
 }
 
 .box {

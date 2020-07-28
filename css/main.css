@@ -454,6 +454,10 @@ a {
   }
 }
 
+.h-box {
+  border-bottom: 1px solid #ececec;
+}
+
 .mob-but-menu {
   display: inline-block;
   margin: 0;
@@ -1151,12 +1155,6 @@ a {
   color: rgba(255, 255, 255, 0.6);
   background-color: #2f303a;
   padding-left: 16px;
-}
-
-.f-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 .f-snl {

@@ -44,6 +44,9 @@ a {
 @media screen and (min-width: 1200px) {
   .head-container {
     width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -308,11 +311,23 @@ a {
   line-height: 1.19px;
 }
 
+@media screen and (min-width: 1200px) {
+  .logo-primary {
+    font-size: 26px;
+  }
+}
+
 .logo-secondary {
   color: #000000;
   font-family: Raleway;
   font-size: 24px;
   line-height: 1.19px;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-secondary {
+    font-size: 26px;
+  }
 }
 
 .logo-secondary:focus {
@@ -354,6 +369,16 @@ a {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .site-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 85px;
+    margin-right: 312px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .site-nav > .item > .link {
     padding-top: 32px;
@@ -372,7 +397,6 @@ a {
   padding-left: 0px;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: auto;
 }
 
 .site-nav-ad .link:hover,
@@ -409,6 +433,11 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-left: auto;
+  }
+  .site-nav-ad .ad-link:last-child {
+    margin-top: 0px;
+    margin-left: 30px;
   }
 }
 
@@ -455,6 +484,12 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-nav-ad .link {
+    font-size: 14px;
   }
 }
 
@@ -514,9 +549,6 @@ a {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 
@@ -569,14 +601,6 @@ a {
   }
   .project:nth-child(1), .project:nth-child(3), .project:nth-child(5), .project:nth-child(7) {
     margin-right: 30px;
-  }
-  .project:nth-child(9) {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
   }
 }
 
@@ -642,9 +666,10 @@ a {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
+  letter-spacing: 0.03em;
   top: 0;
   left: 0;
-  padding: 63px 24px;
+  padding: 77px 24px;
   margin: 0;
   position: absolute;
   width: 100%;
@@ -656,6 +681,12 @@ a {
 .project:hover .project-text,
 .project:focus .project-text {
   opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .project-text {
+    padding: 49px 24px;
+  }
 }
 
 .projects-names {

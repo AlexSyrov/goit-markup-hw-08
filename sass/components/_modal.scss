@@ -10,6 +10,9 @@
   transition: opacity 250ms $cubic;
   padding: 94px 15px;
   overflow-y: scroll;
+  @media (min-width: 1200px) {
+    padding: 0;
+  }
 }
 
 .backdrop.is-hidden {
@@ -31,9 +34,9 @@
     left: 50%;
     transition: translate(-50%, -50%);
     transform: scale(1) translate(-50%, -50%);
-    transition: transform 250ms var(--cubic);
+    transition: transform 250ms $cubic;
     max-width: 450px;
-    width: 100%;
+    max-height: 609px;
   }
   @media (min-width: 1200px) {
     position: absolute;
@@ -41,15 +44,17 @@
     left: 50%;
     transition: translate(-50%, -50%);
     transform: scale(1) translate(-50%, -50%);
-    transition: transform 250ms var(--cubic);
+    transition: transform 250ms $cubic;
     max-width: 528px;
-    width: 100%;
+    max-height: 581px;
   }
 }
 
-// .backdrop.is-hidden .modal {
-//   transform: translate(-50%, -50%) scale(1.5);
-// }
+.backdrop.is-hidden .modal {
+  @media (min-width: 768px) {
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+}
 
 .contract {
   text-decoration: underline;
@@ -61,10 +66,14 @@
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.56;
   text-align: center;
   color: $title-text-color;
   margin-bottom: 30px;
+
+  @media (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 .modal-button {
   display: flex;

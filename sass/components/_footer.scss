@@ -15,10 +15,13 @@
   line-height: 1.19px;
 }
 .logo-address {
-  @media screen and(min-width: 768px) {
+  @media screen and (min-width: 768px) {
     margin-left: 76px;
   }
-  // width: calc((100% - 60px) / 4);
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 60px) / 4);
+    margin-left: 0;
+  }
 }
 .address-city {
   color: $white-color;
@@ -40,6 +43,10 @@
 
 .f-link:last-child {
   margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 
 .f-site-nav .f-link {
@@ -60,12 +67,20 @@
   @media screen and (min-width: 768px) {
     margin-left: 165px;
   }
-  // width: calc((100% - 60px) / 4);
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 55px;
+    // width: calc((100% - 60px) / 4);
+  }
 }
 
 .send-email {
   @media screen and (min-width: 768px) {
     margin-left: 144px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 76px;
+    width: calc((100% - 60px) / 2);
   }
 }
 
@@ -78,6 +93,10 @@
   text-transform: uppercase;
   margin-top: 0px;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    text-align: justify;
+  }
 }
 .f-socialnet-link {
   display: flex;
@@ -96,6 +115,12 @@
   }
 }
 
+.form-flex {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
 .f-form-field {
   display: block;
   width: 100%;
@@ -103,6 +128,10 @@
 
   @media screen and (min-width: 768px) {
     width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
   }
 }
 

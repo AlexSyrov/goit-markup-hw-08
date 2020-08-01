@@ -1,10 +1,10 @@
 .wawd-flex {
   display: flex;
-  padding-bottom: 94px;
+  justify-content: center;
 }
 
 .wawd {
-  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .wawd-img {
@@ -14,11 +14,13 @@
 }
 
 .img-wawd {
-  margin-left: 30px;
-  width: calc((100% - 30px * 2) / 3);
+  margin-right: 30px;
   display: block;
   position: relative;
   margin-bottom: 0;
+  &:nth-child(3) {
+    margin-right: 0;
+  }
 }
 .wawd-position-img {
   position: relative;

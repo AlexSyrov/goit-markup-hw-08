@@ -127,6 +127,12 @@ a {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .title {
+    margin-bottom: 50px;
+  }
+}
+
 .button-primary {
   color: #212121;
   background-color: #f5f4fa;
@@ -166,7 +172,8 @@ a {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: 200px;
+  width: 200px;
+  height: 50px;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -736,6 +743,13 @@ a {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .logo-address {
+    width: calc((100% - 60px) / 4);
+    margin-left: 0;
+  }
+}
+
 .address-city {
   color: #ffffff;
   font-style: normal;
@@ -764,6 +778,12 @@ a {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .f-link:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .f-site-nav .f-link {
   color: white;
   font-style: normal;
@@ -784,9 +804,22 @@ a {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .conecting {
+    margin-left: 55px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .send-email {
     margin-left: 144px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .send-email {
+    margin-left: 76px;
+    width: calc((100% - 60px) / 2);
   }
 }
 
@@ -799,6 +832,12 @@ a {
   text-transform: uppercase;
   margin-top: 0px;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .conecting-title {
+    text-align: justify;
+  }
 }
 
 .f-socialnet-link {
@@ -824,6 +863,14 @@ a {
   background-color: #2196f3;
 }
 
+@media screen and (min-width: 1200px) {
+  .form-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .f-form-field {
   display: block;
   width: 100%;
@@ -833,6 +880,12 @@ a {
 @media screen and (min-width: 768px) {
   .f-form-field {
     width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .f-form-field {
+    margin-right: 12px;
   }
 }
 

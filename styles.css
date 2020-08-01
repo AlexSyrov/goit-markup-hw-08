@@ -591,7 +591,6 @@ textarea {
 }
 
 .img-wawd {
-  margin-left: 30px;
   width: calc((100% - 30px * 2) / 3);
   display: block;
   position: relative;
@@ -623,6 +622,7 @@ textarea {
   text-align: center;
   text-transform: uppercase;
 }
+
 pre {
   margin: 0;
   padding: 0;

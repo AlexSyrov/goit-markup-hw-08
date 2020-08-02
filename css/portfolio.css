@@ -17,12 +17,17 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .head-container {
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  border-bottom: 1px solid #ececec;
 }
 
 @media screen and (min-width: 480px) {
@@ -383,7 +388,7 @@ a {
     display: -ms-flexbox;
     display: flex;
     margin-left: 85px;
-    margin-right: 312px;
+    margin-right: 305px;
   }
 }
 

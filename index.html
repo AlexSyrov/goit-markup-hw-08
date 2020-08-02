@@ -230,8 +230,13 @@
             <li class="img-wawd">
               <div class="wawd-position-img">
                 <img
+                  srcset="
+                    ./images/what_are_we_doing/laptop.jpg    1x,
+                    ./images/what_are_we_doing/laptop@2x.jpg 2x
+                  "
                   src="./images/what_are_we_doing/laptop.jpg"
                   alt="Ноутбук"
+                  width="370"
                 />
               </div>
               <div class="wawd-position">
@@ -245,6 +250,10 @@
             <li class="img-wawd">
               <div class="wawd-position-img">
                 <img
+                  srcset="
+                    ./images/what_are_we_doing/smartphone.jpg    1x,
+                    ./images/what_are_we_doing/smartphone@2x.jpg 2x
+                  "
                   src="./images/what_are_we_doing/smartphone.jpg"
                   alt="Смартфон"
                 />
@@ -258,6 +267,10 @@
             <li class="img-wawd">
               <div class="wawd-position-img">
                 <img
+                  srcset="
+                    ./images/what_are_we_doing/screen.jpg    1x,
+                    ./images/what_are_we_doing/screen@2x.jpg 2x
+                  "
                   src="./images/what_are_we_doing/screen.jpg"
                   alt="Монитор"
                 />
@@ -277,11 +290,29 @@
           <ul class="team-list team-flex">
             <!--Product Designer-->
             <li class="workers-items">
-              <img
-                src="./images/team/img.jpg"
-                alt="Photo Product Designer"
-                class="workers-photo"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/mob/img-mob.jpg    450w,
+                    ./images/team/mob/img-mob@2x.jpg 900w
+                  "
+                  media="(max-width: 480px)" />
+
+                <source
+                  srcset="
+                    ./images/team/desk/img-desk.jpg    270w,
+                    ./images/team/desk/img-desk@2x.jpg 540w
+                  "
+                  media="(min-width: 1200px)" />
+                <img
+                  srcset="
+                    ./images/team/tab/img-tab.jpg    354w,
+                    ./images/team/tab/img-tab@2x.jpg 708w
+                  "
+                  src="./images/team/tab/img-tab.jpg"
+                  alt="Photo Product Designer"
+                  class="workers-photo"
+              /></picture>
               <div class="info-container">
                 <h3 class="member-title">Николай Кучеренко</h3>
                 <p class="postposition" lang="en">Product Designer</p>
@@ -337,11 +368,29 @@
 
             <!--Frontend Developer-->
             <li class="workers-items">
-              <img
-                src="./images/team/img_(1).jpg"
-                alt="Photo Frontend Developer"
-                class="workers-photo"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desk/img-desk_(1).jpg    270w,
+                    ./images/team/desk/img-desk_(1)@2x.jpg 540w
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/team/mob/img-mob_(1).jpg    450w,
+                    ./images/team/mob/img-mob_(1)@2x.jpg 900w
+                  "
+                  media="(max-width: 480px)" />
+                <img
+                  srcset="
+                    ./images/team/tab/img-tab_(1).jpg    354w,
+                    ./images/team/tab/img-tab_(1)@2x.jpg 708w
+                  "
+                  src="./images/team/tab/img-tab_(1).jpg"
+                  alt="Photo Frontend Developer"
+                  class="workers-photo"
+              /></picture>
+
               <div class="info-container">
                 <h3 class="member-title">Ольга Иванова</h3>
                 <p class="postposition" lang="en">Frontend Developer</p>
@@ -397,11 +446,28 @@
 
             <!--Marketing-->
             <li class="workers-items">
-              <img
-                src="./images/team/img_(2).jpg"
-                alt="Photo Marketing"
-                class="workers-photo"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desk/img-desk_(2).jpg    270w,
+                    ./images/team/desk/img-desk_(2)@2x.jpg 540w
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/team/mob/img-mob_(2).jpg    450w,
+                    ./images/team/mob/img-mob_(2)@2x.jpg 900w
+                  "
+                  media="(max-width: 480px)" />
+                <img
+                  srcset="
+                    ./images/team/tab/img-tab_(2).jpg    354w,
+                    ./images/team/tab/img-tab_(2)@2x.jpg 708w
+                  "
+                  src="./images/team/tab/img-tab_(2).jpg"
+                  alt="Photo Marketing"
+                  class="workers-photo"
+              /></picture>
               <div class="info-container">
                 <h3 class="member-title">Андрей Шевченко</h3>
                 <p class="postposition" lang="en">Marketing</p>
@@ -457,11 +523,28 @@
 
             <!--UI Designer-->
             <li class="workers-items">
-              <img
-                src="./images/team/img_(3).jpg"
-                alt="Photo UI Designer"
-                class="workers-photo"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desk/img-desk_(3).jpg    270w,
+                    ./images/team/desk/img-desk_(3)@2x.jpg 540w
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/team/mob/img-mob_(3).jpg    450w,
+                    ./images/team/mob/img-mob_(3)@2x.jpg 900w
+                  "
+                  media="(max-width: 480px)" />
+                <img
+                  srcset="
+                    ./images/team/tab/img-tab_(3).jpg    354w,
+                    ./images/team/tab/img-tab_(3)@2x.jpg 708w
+                  "
+                  src="./images/team/tab/img-tab_(3).jpg"
+                  alt="Photo UI Designer"
+                  class="workers-photo"
+              /></picture>
               <div class="info-container">
                 <h3 class="member-title">Иван Николаев</h3>
                 <p class="postposition" lang="en">UI Designer</p>

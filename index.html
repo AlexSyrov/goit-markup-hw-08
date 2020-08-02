@@ -77,68 +77,69 @@
       </div>
     </div>
     <!--Шапка-->
-    <header class="head-container h-box">
+    <header class="h-box">
       <!--Навигация-->
-
-      <nav class="nav-flex">
-        <!--Лого-->
-        <div>
-          <a href="/" class="logo"
-            ><span class="logo-primary">Web</span>
-            <span class="logo-secondary">Studio</span></a
+      <div class="head-container">
+        <nav class="nav-flex">
+          <!--Лого-->
+          <div>
+            <a href="/" class="logo"
+              ><span class="logo-primary">Web</span>
+              <span class="logo-secondary">Studio</span></a
+            >
+          </div>
+          <button
+            type="button"
+            class="mob-but-menu"
+            aria-label="Переключатель мобильного меню"
+            aria-expanded="false"
+            data-menu-button
           >
+            <svg width="40px" height="40px">
+              <use
+                class="icon-cross"
+                href="./images/webstudio.svg#icon-close_40px"
+              ></use>
+              <use
+                class="icon-menu"
+                href="./images/webstudio.svg#icon-menu_40px"
+              ></use>
+            </svg>
+          </button>
+        </nav>
+        <div class="menu-container" data-menu>
+          <!--Список страниц-->
+          <ul class="site-nav">
+            <li class="item">
+              <a href="./" class="link current">Студия</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="link">Портфолио</a>
+            </li>
+            <li class="item"><a href="/" class="link">Контакты</a></li>
+          </ul>
+
+          <!--Список контактов-->
+
+          <address class="site-nav-ad">
+            <div class="ad-link">
+              <a href="mailto:info@devstudio.com" class="link">
+                <svg class="e-t-icon-envelope">
+                  <use href="./images/webstudio.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </div>
+            <div class="ad-link">
+              <a href="tel:380961111111" class="link">
+                <svg class="e-t-icon-smartphone">
+                  <use href="./images/webstudio.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </div>
+          </address>
         </div>
-        <button
-          type="button"
-          class="mob-but-menu"
-          aria-label="Переключатель мобильного меню"
-          aria-expanded="false"
-          data-menu-button
-        >
-          <svg width="40px" height="40px">
-            <use
-              class="icon-cross"
-              href="./images/webstudio.svg#icon-close_40px"
-            ></use>
-            <use
-              class="icon-menu"
-              href="./images/webstudio.svg#icon-menu_40px"
-            ></use>
-          </svg>
-        </button>
-      </nav>
-      <div class="menu-container" data-menu>
-        <!--Список страниц-->
-        <ul class="site-nav">
-          <li class="item">
-            <a href="./" class="link current">Студия</a>
-          </li>
-          <li class="item">
-            <a href="./portfolio.html" class="link">Портфолио</a>
-          </li>
-          <li class="item"><a href="/" class="link">Контакты</a></li>
-        </ul>
-
-        <!--Список контактов-->
-
-        <address class="site-nav-ad">
-          <div class="ad-link">
-            <a href="mailto:info@devstudio.com" class="link">
-              <svg class="e-t-icon-envelope">
-                <use href="./images/webstudio.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </div>
-          <div class="ad-link">
-            <a href="tel:380961111111" class="link">
-              <svg class="e-t-icon-smartphone">
-                <use href="./images/webstudio.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </div>
-        </address>
       </div>
     </header>
 
